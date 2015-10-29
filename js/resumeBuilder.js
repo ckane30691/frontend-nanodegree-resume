@@ -25,7 +25,7 @@ $('#header').prepend(formattedRole);
 
  var work = {};
  work.employer = "The Man";
- work.workDates = "Jan 1, 2011 - Present";
+ work.workDates = "2011 - Present";
  work.locations = "Lake Forest";
  work.desc =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \
  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis \
@@ -34,10 +34,20 @@ $('#header').prepend(formattedRole);
  	nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui \
  	officia deserunt mollit anim id est laborum.";
 
+ var education = {};
+ education["school"] = "Victor Valley College";
+ education["dates"] = "2009 - 2011";
+ education["locations"] = "Victorville";
+
  var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
  var formattedWorkDates = HTMLworkDates.replace("%data%", work.workDates);
  var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.locations);
  var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.desc);
+
+ var formattedSchool = HTMLschoolName.replace("%data%", education.school);
+ var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.dates);
+ var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.locations);
+
 
  var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
  var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
@@ -50,6 +60,12 @@ $('#workExperience').append(formattedEmployer);
 $('#workExperience').append(formattedWorkDates);
 $('#workExperience').append(formattedWorkLocation);
 $('#workExperience').append(formattedWorkDescription);
+
+$("#workExperience").append(HTMLschoolStart);
+$("#education").append(formattedSchool);
+$("#education").append(formattedSchoolDates);
+$("#education").append(formattedSchoolLocation);
+
 
 $('#lets-connect').append(formattedMobile);
 $('#lets-connect').append(formattedEmail);
