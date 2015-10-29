@@ -23,11 +23,33 @@ $('#header').prepend(formattedRole);
  	"bioPic": "images/fry.jpg"
  };
 
+ var work = {};
+ work.employer = "The Man";
+ work.workDates = "Jan 1, 2011 - Present";
+ work.locations = "Lake Forest";
+ work.desc =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis \
+ 	/*nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis \
+ 	aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat \
+ 	nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui \
+ 	officia deserunt mollit anim id est laborum.";
+
+ var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
+ var formattedWorkDates = HTMLworkDates.replace("%data%", work.workDates);
+ var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.locations);
+ var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.desc);
+
  var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
  var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
  var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
  var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.locations);
  var formattedPic = HTMLbioPic.replace("%data%", bio.bioPic);
+
+$('#workExperience').append(HTMLworkStart);
+$('#workExperience').append(formattedEmployer);
+$('#workExperience').append(formattedWorkDates);
+$('#workExperience').append(formattedWorkLocation);
+$('#workExperience').append(formattedWorkDescription);
 
 $('#lets-connect').append(formattedMobile);
 $('#lets-connect').append(formattedEmail);
