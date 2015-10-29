@@ -16,7 +16,7 @@ $('#header').prepend(formattedRole);
  		"mobile": "760-596-2078",
  		"email" : "ckane30691@gmail.com",
  		"github": "ckane30691",
- 		"locations": "Lake Forest",
+ 		"locations": "Lake Forest"
  	},
  	"welcomeMessage": "Lorem Ipsum",
  	"skills": skills,
