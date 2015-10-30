@@ -22,6 +22,13 @@ $('#header').prepend(formattedRole);
  	"skills": skills,
  	"bioPic": "images/fry.jpg"
  };
+ 
+ var projects = {
+ 	"title" : [],
+ 	"dates" : [],
+ 	"desc" : [],
+ 	"image" : []
+ };
 
  var work = {
  	"employer": "The Man",
