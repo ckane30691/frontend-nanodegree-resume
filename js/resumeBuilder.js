@@ -2,13 +2,13 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
  //$('#main').append("Cory Kane");
- var formattedName =  HTMLheaderName.replace("%data%", "Cory Kane");
+ /*var formattedName =  HTMLheaderName.replace("%data%", "Cory Kane");
  var formattedRole = HTMLheaderRole.replace("%data%", "Web Developer");
 
 $('#header').prepend(formattedRole);
  $('#header').prepend(formattedName);
  
- var skills = ["HTML","CSS","JavaScript","Python"]
+ var skills = ["HTML","CSS","JavaScript","Python"]*/
  var bio = {
  	"name":"Cory Kane",
  	"role": "Web Developer",
@@ -19,7 +19,7 @@ $('#header').prepend(formattedRole);
  		"locations": "Lake Forest"
  	},
  	"welcomeMessage": "Lorem Ipsum",
- 	"skills": skills,
+ 	"skills": ["HTML","CSS","JavaScript","Python"],
  	"bioPic": "images/fry.jpg"
  };
  
@@ -55,7 +55,7 @@ $('#header').prepend(formattedRole);
  };
 
  
- var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
+ /*var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
  var formattedWorkDates = HTMLworkDates.replace("%data%", work.workDates);
  var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.locations);
  var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.desc);
@@ -87,4 +87,4 @@ $('#lets-connect').append(formattedMobile);
 $('#lets-connect').append(formattedEmail);
 $('#lets-connect').append(formattedGithub);
 $("#lets-connect").append(formattedLocation);
-$("#header").append(formattedPic);
+$("#header").append(formattedPic);*/
