@@ -23,30 +23,39 @@ $('#header').prepend(formattedRole);
  	"bioPic": "images/fry.jpg"
  };
 
- var work = {};
- work.employer = "The Man";
- work.workDates = "2011 - Present";
- work.locations = "Lake Forest";
- work.desc =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \
+ var work = {
+ 	"employer": "The Man",
+	"locations": "Lake Forest",
+	"workDates": "2011 - Present",
+	"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \
  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis \
- 	/*nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis \
+ 	nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis \
  	aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat \
  	nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui \
- 	officia deserunt mollit anim id est laborum.";
+ 	officia deserunt mollit anim id est laborum."
+ };
 
- var education = {};
- education["school"] = "Victor Valley College";
- education["dates"] = "2009 - 2011";
- education["locations"] = "Victorville";
+ var education = {
+ 	"schools":{
+ 		"college": "Victor Valley College", 
+ 		"dates": "2009 - 2011", 
+ 		"locations": "Victorville"},
+ 	"onlineClasses":{
+ 		"courseName": "Udacity",
+ 		"dates": "Dates Go Here",
+ 		"desc":"Course Description Goes Here"
+ 	}
+ };
 
+ 
  var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
  var formattedWorkDates = HTMLworkDates.replace("%data%", work.workDates);
  var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.locations);
  var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.desc);
 
- var formattedSchool = HTMLschoolName.replace("%data%", education.school);
- var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.dates);
- var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.locations);
+ var formattedSchool = HTMLschoolName.replace("%data%", education.schools.college);
+ var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools.dates);
+ var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools.locations);
 
 
  var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
